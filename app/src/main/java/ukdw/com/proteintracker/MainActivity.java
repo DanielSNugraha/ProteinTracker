@@ -1,5 +1,6 @@
 package ukdw.com.proteintracker;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,11 +18,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         TextView textView = (TextView) findViewById(R.id.mainActivityTextView);
+        textView.setText("text untuk update view");
+
+        Button helpBtn = (Button) findViewById(R.id.helpButton);
+        helpBtn.setOnClickListener((helpButtonListener));
+
+        Button btnLayout = (Button) findViewById((R.id.btnLayout));
+        btnLayout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = new Intent (MainActivity.this,Main2Activity.class);
+                startActivity(i);
+            }
+        });
+
+        if(savedInstanceState != null)
+
+
         textView.setText(R.string.test_untuk_update_view);
-        Button helpBtn = (Button)findViewById(R.id.helpButton);
+        Button helpButton = (Button)findViewById(R.id.helpButton);
         helpBtn.setOnClickListener(helpButtonListener);
+
         if(savedInstanceState != null){
             Log.d("ProteinTracker",savedInstanceState.getString("abc"));
         }

@@ -51,4 +51,12 @@
         app:layout_constraintStart_toStartOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
+    <Button
+        android:id="@+id/btnLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout"
+        app:layout_constraintStart_toStartOf="@+id/helpButton"
+        tools:layout_editor_absoluteY="266dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

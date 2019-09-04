@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+
+    <TextView
+    android:text="red"
+    android:gravity="center_horizontal"
+    android:background="#aa0000"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+        />
+
+        <TextView
+        android:text="green"
+        android:gravity="center_horizontal"
+        android:background="#00aa00"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+            />
+
+        <TextView
+        android:text="blue"
+        android:gravity="center_horizontal"
+        android:background="#0000aa"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+
+            /> <TextView
+        android:text="yellow"
+        android:gravity="center_horizontal"
+        android:background="#aaaa00"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+
+    <TextView
+        android:text="row one"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        />
+    <TextView
+
+        android:text="row two"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:text="row three"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:text="row four"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Type here:"/>
+
+        <EditText
+            android:id="@+id/entry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:layout_below="@id/label"/>
+
+        <Button android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/entry"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:text="OK"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ok"
+            android:layout_alignTop="@id/ok"
+            android:text="Cancel"/>
+    </RelativeLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+
+    <TableRow> <TextView android:layout_column="1"
+        android:text="Open..."
+        android:padding="3dip" />
+
+        <TextView android:text="Ctrl-O"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:layout_column="1"
+        android:text="Save..."
+        android:padding="3dip" />
+
+        <TextView
+            android:text="Ctrl-S"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView android:layout_column="1"
+            android:text="Save As..."
+            android:padding="3dip" />
+        <TextView android:text="Ctrl-Shift-S"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow> <TextView
+        android:text="X"
+        android:padding="3dip" />
+        <TextView
+            android:text="Import..."
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="X"
+            android:padding="3dip"
+            />
+        <TextView
+            android:text="Export..."
+            android:padding="3dip" />
+        <TextView android:text="Ctrl-E"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <View android:layout_height="2dip"
+        android:background="#FF909090" />
+    </TableLayout>
+
+    <TableRow> <TextView android:layout_column="1"
+        android:text="Quit"
+        android:padding="3dip" />
+    </TableRow>
+</LinearLayout>
+
+
