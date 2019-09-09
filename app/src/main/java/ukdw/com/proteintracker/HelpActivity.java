@@ -13,11 +13,11 @@ public class HelpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_help);
 
         TextView myTextView = new TextView(this);
-        myTextView.setText("hehe");
 
         Bundle b = getIntent().getExtras();
+
         String helpText = b.getString("helpString");
-        myTextView.setText(helpText);
+        myTextView.setText("Some Help Text");
         setContentView(myTextView);
     }
 }
