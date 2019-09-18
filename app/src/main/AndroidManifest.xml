@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Protein2Fragment"></activity>
+        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".Protein2Fragment" />
         <activity android:name=".Main5FragActivity" />
         <activity android:name=".Main4Activity" />
         <activity android:name=".fragmentActivity" />
