@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(R.string.test_untuk_update_view);
         Button mylay = findViewById(R.id.btn_layout);
         mylay.setOnClickListener(btnLayout);
-
+        Button btnList =(Button)findViewById(R.id.btnList);
         Button myBtn = (Button) findViewById(R.id.button1);
+        Button buttonFragment = (Button)findViewById(R.id.btnFragment1);
+
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +40,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 EditText myEditText = (EditText) findViewById(R.id.editText1);
                 Log.d("Proteintracker", myEditText.getText().toString());
+            }
+        });
+
+        btnList.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = new Intent(MainActivity.this,ListActivity.class);
+                startActivity(i);
+            }
+        });
+
+        buttonFragment.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = new Intent(MainActivity.this,FragmentActivity.class);
+                startActivity(i);
             }
         });
 

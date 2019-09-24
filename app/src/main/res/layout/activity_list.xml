@@ -10,15 +10,21 @@
         android:id="@+id/spinnerProgmob"
         android:layout_width="400dp"
         android:layout_height="53dp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="22dp" />
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/lvLoremIpsum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/lvLoremIpsum"
         android:layout_width="417dp"
         android:layout_height="605dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerProgmob"
-        tools:layout_editor_absoluteX="-3dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProgmob" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

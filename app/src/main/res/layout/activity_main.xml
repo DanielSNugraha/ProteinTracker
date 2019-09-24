@@ -60,10 +60,10 @@
         android:id="@+id/btnFrag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="Fragment"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="17dp" />
 
     <Button
         android:id="@+id/button2"
@@ -78,8 +78,16 @@
         android:id="@+id/btnList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="List"
         tools:layout_editor_absoluteX="17dp"
         tools:layout_editor_absoluteY="526dp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="186dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

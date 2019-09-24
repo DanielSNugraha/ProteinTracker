@@ -18,8 +18,10 @@ public class ListActivity extends AppCompatActivity {
             "vel", "erat", "placerat", "ante", "porttitor", "sodales",
             "pellentesque", "augue", "purus"};
 
-    @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState);
+    @Override protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
     ListView lv = (ListView)findViewById(R.id.lvLoremIpsum);
 
         Spinner spinner = findViewById((R.id.spinnerProgmob));

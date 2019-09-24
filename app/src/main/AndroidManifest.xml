@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".MainKelolaActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".ListActivity" />
         <activity android:name=".Protein2Fragment" />
         <activity android:name=".Main5FragActivity" />
         <activity android:name=".Main4Activity" />
-        <activity android:name=".fragmentActivity" />
         <activity android:name=".ProteinTrackerApp" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".HelpActivity" />
