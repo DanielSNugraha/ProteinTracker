@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import ukdw.com.proteintracker.Adapter.MahasiswaAdapter;
 import ukdw.com.proteintracker.Model.Mahasiswa;
 
-public class RecycleViewActivity extends AppCompatActivity {
+public class InClassRecyclerActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView ;
     private MahasiswaAdapter mahasiswaAdapter ;
@@ -20,14 +20,14 @@ public class RecycleViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycle_view);
+        setContentView(R.layout.activity_in_class_recycler);
 
         addData();
 
         recyclerView = findViewById(R.id. rvMahasiswa );
         mahasiswaAdapter = new MahasiswaAdapter( mahasiswaArrayList );
         RecyclerView.LayoutManager layoutManager = new
-                LinearLayoutManager(RecycleViewActivity.this );
+                LinearLayoutManager(InClassRecyclerActivity.this );
         recyclerView .setLayoutManager(layoutManager);
         recyclerView .setAdapter( mahasiswaAdapter );
     }
