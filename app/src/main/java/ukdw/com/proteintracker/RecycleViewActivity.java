@@ -20,7 +20,7 @@ public class RecycleViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycle_view);
+        setContentView(R.layout.card_view_mhs);
 
         addData();
 
