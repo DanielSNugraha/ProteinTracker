@@ -12,11 +12,7 @@
         <activity android:name=".RecycleViewActivityMhs"></activity>
         <activity android:name=".InClassRecyclerActivity" />
         <activity android:name=".RecycleViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".EditActivity" />
         <activity android:name=".MainKelolaActivity" />
@@ -26,7 +22,13 @@
         <activity android:name=".Protein2Fragment" />
         <activity android:name=".Main5FragActivity" />
         <activity android:name=".Main4Activity" />
-        <activity android:name=".ProteinTrackerApp" />
+        <activity android:name=".ProteinTrackerApp" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".MainActivity" />
