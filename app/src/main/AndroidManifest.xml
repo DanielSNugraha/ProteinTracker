@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecycleViewActivityMhs"></activity>
+        <activity
+            android:name=".SettingsProteinTracker"
+            android:label="@string/title_activity_settings_protein_tracker"></activity>
+        <activity android:name=".RecycleViewActivityMhs" />
         <activity android:name=".InClassRecyclerActivity" />
-        <activity android:name=".RecycleViewActivity">
-
-        </activity>
+        <activity android:name=".RecycleViewActivity" />
         <activity android:name=".EditActivity" />
         <activity android:name=".MainKelolaActivity" />
         <activity android:name=".AddActivity" />
@@ -22,12 +23,12 @@
         <activity android:name=".Protein2Fragment" />
         <activity android:name=".Main5FragActivity" />
         <activity android:name=".Main4Activity" />
-        <activity android:name=".ProteinTrackerApp" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".ProteinTrackerApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".HelpActivity" />
